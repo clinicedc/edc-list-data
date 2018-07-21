@@ -19,7 +19,7 @@ setup(
     author_email='ew2789@gmail.com',
     packages=find_packages(),
     url='http://github.com/clinicedc/edc-list-data',
-    license='GPL licence, see LICENCE',
+    license='GPL license, see LICENSE',
     description='Populate list data and other static model data on startup',
     long_description=README,
     include_package_data=True,

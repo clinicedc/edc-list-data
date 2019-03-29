@@ -44,6 +44,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
+    install_requires=["edc-base"],
     python_requires=">=3.7",
     tests_require=tests_require,
     test_suite='runtests.main',

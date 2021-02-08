@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
-
 from os.path import abspath, dirname, join
-from setuptools import setup
-from setuptools import find_packages
+
+from setuptools import find_packages, setup
 
 with open(join(dirname(__file__), "README.rst")) as readme:
     README = readme.read()
@@ -18,7 +17,7 @@ os.chdir(os.path.normpath(join(abspath(__file__), os.pardir)))
 setup(
     name="edc-list-data",
     version=VERSION,
-    author=u"Erik van Widenfelt",
+    author="Erik van Widenfelt",
     author_email="ew2789@gmail.com",
     packages=find_packages(),
     url="http://github.com/clinicedc/edc-list-data",
@@ -41,5 +40,4 @@ setup(
     ],
     install_requires=[],
     python_requires=">=3.7",
-    test_suite="runtests.main",
 )

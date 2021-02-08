@@ -1,4 +1,4 @@
-|pypi| |travis| |coverage|
+|pypi| |actions| |coverage|
 
 edc-list-data
 -------------
@@ -23,7 +23,7 @@ An example ``list_data.py``:
 
 
 .. code-block:: python
-	
+
 	from edc_constants.constants import OTHER
 	from edc_list_data import PreloadData
 
@@ -51,9 +51,9 @@ See also call to ``site_list_data.autodiscover`` called in ``edc_list_data.apps.
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-list-data.svg
     :target: https://pypi.python.org/pypi/edc-list-data
-    
-.. |travis| image:: https://travis-ci.com/clinicedc/edc-list-data.svg?branch=develop
-    :target: https://travis-ci.com/clinicedc/edc-list-data
-    
+
+.. |actions| image:: https://github.com/clinicedc/edc-list-data/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/clinicedc/edc-list-data/actions?query=workflow:build
+
 .. |coverage| image:: https://coveralls.io/repos/github/clinicedc/edc-list-data/badge.svg?branch=develop
     :target: https://coveralls.io/github/clinicedc/edc-list-data?branch=develop

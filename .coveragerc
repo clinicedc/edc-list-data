@@ -1,4 +1,4 @@
 [run]
-include = edc_model_wrapper/*
-omit = edc_model_wrapper/tests/*,edc_model_wrapper/migrations/*
+include = edc_list_data/*
+omit = edc_list_data/tests/*,edc_list_data/migrations/*
 branch = 1

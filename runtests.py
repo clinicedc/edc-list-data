@@ -17,6 +17,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     APP_NAME=app_name,
     BASE_DIR=base_dir,
     ETC_DIR=os.path.join(base_dir, app_name, "tests", "etc"),
+    EDC_LIST_DATA_ENABLE_AUTODISCOVER=False,
     INSTALLED_APPS=[
         "django.contrib.admin",
         "django.contrib.auth",
@@ -44,6 +45,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "edc_visit_tracking.apps.AppConfig",
         "edc_identifier.apps.AppConfig",
         "edc_list_data.apps.AppConfig",
+        "my_list_app.apps.AppConfig",
     ],
     add_dashboard_middleware=True,
     use_test_urls=True,

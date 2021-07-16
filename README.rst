@@ -9,6 +9,9 @@ To install add ``edc_list_data.apps.AppConfig`` to your `INSTALLED_APPS`, then c
 
 Most commonly used to populate M2M data known here as ``list_data``. M2M field models should use the ``ListModelMixin``.
 
+The list models are populated using a ``post_migrate`` signal. Once everything is configured
+or after changes are made, you need to run ``python manage.py migrate``.
+
 For example:
 
 .. code-block:: python
@@ -25,7 +28,6 @@ An example ``list_data.py``:
 .. code-block:: python
 
 	from edc_constants.constants import OTHER
-	from edc_list_data import PreloadData
 
 	list_data = {
 	    'my_lists_app.antibiotic': [
@@ -40,12 +42,14 @@ An example ``list_data.py``:
 	    ],
 	}
 
-	preload_data = PreloadData(list_data=list_data)
+Now run:
+    >>> python manage.py migrate
 
 
-``PreloadData`` will persist the list data in model ``Antibiotic`` and maintain the order in which the list items are declared.
+The list data will be populated in the order in which the list items are declared.
 
-See also call to ``site_list_data.autodiscover`` called in ``edc_list_data.apps.AppConfig``.
+See also call to ``site_list_data.autodiscover`` and ``site_list_data.load_data`` called in ``edc_list_data.apps.AppConfig``
+using a ``post_migrate`` signal.
 
 
 

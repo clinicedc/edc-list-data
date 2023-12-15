@@ -56,8 +56,8 @@ using a ``post_migrate`` signal.
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-list-data.svg
     :target: https://pypi.python.org/pypi/edc-list-data
 
-.. |actions| image:: https://github.com/clinicedc/edc-list-data/workflows/build/badge.svg?branch=develop
-  :target: https://github.com/clinicedc/edc-list-data/actions?query=workflow:build
+.. |actions| image:: https://github.com/clinicedc/edc-list-data/actions/workflows/build.yml/badge.svg
+  :target: https://github.com/clinicedc/edc-list-data/actions/workflows/build.yml
 
 .. |coverage| image:: https://coveralls.io/repos/github/clinicedc/edc-list-data/badge.svg?branch=develop
     :target: https://coveralls.io/github/clinicedc/edc-list-data?branch=develop
